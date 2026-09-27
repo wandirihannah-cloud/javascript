@@ -1,22 +1,27 @@
-unction calculatetax(amount){
+function calculateTax(amount) {
     return amount * 0.10;
 }
 
-function convertToUpperCase(text)
-{
+function convertToUpperCase(text) {
     return text.toUpperCase();
 }
 
-function findMaximum(num1 , num2){
-    return Math.max(num1 , num2)
+function findMaximum(num1, num2) {
+    return Math.max(num1, num2);
 }
 
-function isPalindrome(word){
-    return word ===
-    word.split("").reverse().join("")
+function isPalindrome(word) {
+    return word === word.split("").reverse().join("");
 }
 
-function
-calculateDiscountedPrice(originalIP rice, discountPercentage) {
-    return originalPrice -(originalPrice * discountPercentage / 100)
+function calculateDiscountedPrice(originalPrice, discountPercentage) {
+    return originalPrice - (originalPrice * discountPercentage / 100);
 }
+
+module.exports = {
+    calculateTax,
+    convertToUpperCase,
+    findMaximum,
+    isPalindrome,
+    calculateDiscountedPrice
+};
